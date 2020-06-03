@@ -1,0 +1,27 @@
+
+.about-container{
+    h1{
+        font-family: $font_1;
+        text-align: center;
+        color: $primary-color;
+		margin: 30px;
+		text-transform: capitalize;
+    }
+}
+
+.team-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+
+}
+.member{
+    margin-top: 10px;;
+    color: $secondary-color;
+}
+.post{
+    color: $primary-color
+}

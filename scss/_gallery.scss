@@ -1,0 +1,97 @@
+// magnific pop up
+.img, .blog-img, .user-img {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center center;}
+	
+.image-popup {
+	cursor: -webkit-zoom-in;
+	cursor: -moz-zoom-in;
+	cursor: zoom-in;
+}
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease-out; 
+  -moz-transition: all 0.3s ease-out; 
+  -o-transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.work {
+  display: block;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 0;
+  background-position: top center !important;
+  z-index: 0;
+  position: relative;
+  &:after{
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	content: '';
+  	background: $darken;
+  	opacity: 0;
+  	z-index: 0;
+  	@include transition(.3s);
+  }
+  .text{
+  	span{
+  		color: rgba(255,255,255,.9);
+  	}
+  }
+  h2{
+  	color: $white;
+  	line-height: 1.2;
+  	font-size: 18px;
+  	a{
+  		color: $white;
+  	}
+  }
+  .desc{
+  	z-index: 1;
+  }
+  .icon{
+ 		position: absolute;
+ 		top: 50%;
+ 		right: 50%;
+ 		width: 70px;
+ 		height: 70px;
+ 		content: '';
+ 		z-index: 1;
+ 		background: $gold-color;
+ 		transform: translate(50%, 50%);
+ 		margin-top: -70px;
+ 		opacity: 0;
+ 		border-radius: 50%;
+ 		@include transition(.3s);
+ 		span{
+ 			color: $white;
+ 		}
+ 	}
+  &:hover{
+  	&:after{
+  		opacity: .7;
+  	}
+  	.icon{
+  		opacity: 1;
+  	}
+  }
+}

@@ -1,0 +1,127 @@
+.wrapper{
+	width: 100%;
+}
+
+
+.contact-wrap{
+	background: #e8edf0;
+}
+
+.hero-wrap .slider-text .title-head .bread {
+    font-weight: 700 !important;
+}
+
+.hero-wrap .slider-text .title-head h1 {
+    font-size: 70px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 800;
+    font-family: $font_1;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+
+
+
+.dbox{
+	width: 100%;
+	margin-bottom: 25px;
+	padding: 0 20px;
+	@media #{$md}{
+		margin-bottom: 0;
+		padding: 0;
+	}
+	p{
+		margin-bottom: 0;
+		span{
+			font-weight: 500;
+			color: $black;
+		}
+		a{
+			color: $primary-color;
+		}
+	}
+	.icon{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background: $darken;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		span{
+			font-size: 30px;
+			color: $white;
+		}
+	}
+	.text{
+		width: 100%;
+	}
+}
+
+.btn {
+	padding: 12px 16px;
+	cursor: pointer;
+	border-width: 1px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 400;
+	-webkit-box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.12);
+	-moz-box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.12);
+	box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.12);
+	position: relative;
+	margin-bottom: 20px;
+	@include transition(.3s);
+	&:hover, &:active, &:focus {
+		outline: none !important;
+		-webkit-box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.22) !important;
+		-moz-box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.22) !important;
+		box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.22) !important;
+	}
+	&.btn-primary {
+		background: $primary-color !important;
+		border-color: $primary-color !important;
+		color: $white;
+		&:hover,&:focus{
+			border-color: darken($primary-color,10%) !important;
+			background: darken($primary-color,10%) !important;
+		}
+	}
+}
+
+.contactForm{
+	.label{
+		color: $black;
+		text-transform: uppercase;
+		font-size: 12px;
+        font-weight: 600;
+        font-family: $font_2;
+	}
+	.form-control{
+        border: none !important;
+       
+	}
+}
+
+.form-control {
+	height: 52px!important;
+	background: $white!important;
+	color: $black!important;
+	font-size: 18px;
+	border-radius: 5px;
+	box-shadow: none!important;
+	&:focus, &:active {
+		border-color: $black;
+	}
+}
+textarea.form-control {
+	height: inherit!important;
+}
+
+#map {
+	// height: 400px;
+	width: 100%;
+	@media #{$sm} {
+		height: 300px;
+	}
+}

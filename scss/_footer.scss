@@ -1,0 +1,42 @@
+.footer-area{
+    background-color: lighten($black, 10%) ;   
+}
+
+.quick-links h2, .contact h2{
+    color: $white;
+    font-family: $font_1;
+}
+
+ p.logo-def,  .contact p{
+    color: lighten($black, 50%);
+    font-family: $font_2;
+}
+.quick-links{
+    li{
+        a{
+            color: lighten($black, 50%);
+        font-family: $font_2;
+        &:hover{
+            color: $primary-color;
+            animation: fadeIn; 
+            animation-duration: .20s; 
+        }
+        }
+        
+    }
+
+
+}
+
+.foo-text{
+    a{
+        color: lighten($black, 50%);
+        
+        &:hover{
+            color: $primary-color;
+            animation: fadeIn; 
+            animation-duration: .20s; 
+        }
+    }
+    
+}
