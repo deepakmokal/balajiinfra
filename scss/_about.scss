@@ -1,11 +1,24 @@
-
+.index-head{
+    color: $primary-color;
+}
 .about-container{
+    
     h1{
         font-family: $font_1;
         text-align: center;
         color: $primary-color;
 		margin: 30px;
 		text-transform: capitalize;
+    }
+    .aboutHead{
+        color: #282828;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 40px;
+        margin: 0;
+        font-style: italic;
+        margin-bottom: 40px;
+        font-family: "Roboto", sans-serif;        
     }
 }
 
@@ -15,8 +28,11 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    
+}
 
+.profile_pic{
+    height: 150px;
+    width: 150px;
 }
 .member{
     margin-top: 10px;;
@@ -24,4 +40,32 @@
 }
 .post{
     color: $primary-color
+}
+
+.aboutusbtn{
+    a{
+        border: 1px solid $primary-color;
+        padding: 1em;
+        color: $black;
+        font-family: $font_2;
+        color: $primary-color;
+        &:hover{
+            background-color: $primary-color;
+            color: $white;
+        }
+        @media #{$md}{
+            margin: 0;
+         }
+        @media #{$sm}{
+            margin: 1em;
+            margin-top:15px
+         }
+        @media #{$xs}{
+            margin: 1em;
+            margin-top:15px;
+         }
+    
+    }
+    
+    
 }

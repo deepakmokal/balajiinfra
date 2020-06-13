@@ -8,6 +8,17 @@
     }
 }
 
+.linkdiv{
+	width: 100%;
+	text-align: center;
+	.service-link{
+		text-align: center;
+		color:$primary-color;
+		margin-bottom: 3em !important;
+		font-weight: bold;
+	}
+}
+
 .services{
 	display: block;
 	width: 100%;
@@ -148,3 +159,40 @@
 		}
 	}
 }
+
+
+.service-image{
+	img{
+		height: 500px;
+		width: 100%;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+	
+		.service-para{
+			font-family: $font_2;
+			color: $secondary-color;
+			@media #{$md}{
+				margin: 1em;
+				
+			 }
+			@media #{$sm}{
+				margin: 1em;
+			 }
+			@media #{$xs}{
+				margin: 1em;
+			}
+		}
+	
+
+
+
+	.service-heading{
+		font-family: $font_1;
+		width: 100%;
+        color: $primary-color;
+		text-transform: capitalize;
+	}
+

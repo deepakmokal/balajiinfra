@@ -133,12 +133,22 @@
 }
 .get-btn {
 	padding: 28px 30px;
-	background: $primary-color;
+    background: $primary-color;
+    text-align: center;
     color:$white;
     display: block;
     &:hover{
         color: $white;
     }
+}
+
+.headerLink{
+    color:$white;
+    font-weight: 400;
+}
+
+.headerLink:hover{
+    color: $primary-color !important;
 }
 
 

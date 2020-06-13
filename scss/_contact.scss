@@ -118,10 +118,15 @@ textarea.form-control {
 	height: inherit!important;
 }
 
-#map {
+.map{
+	background-image: url('../images/compressed/visit_1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	// height: 400px;
 	width: 100%;
 	@media #{$sm} {
 		height: 300px;
+		display: none;
 	}
 }

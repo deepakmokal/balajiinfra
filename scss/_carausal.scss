@@ -134,7 +134,7 @@
                 &.active {
                     background: lighten(#000, 70%);
                     &:after{
-                        border-color: #fff;
+                        border-color: $primary-color;
                     }
                 }
             }
@@ -219,7 +219,7 @@
                     &:hover,&:focus{
                         span{
                             &:before{
-                                color: #fff;
+                                color: $primary-color;
                             }
                         }
                     }
@@ -265,7 +265,7 @@
                     border-radius: 50%;
                     background: rgba(255,255,255,.4);
                     &.active {
-                        background: #fff;
+                        background: $primary-color;
                     }
                 }
             }
@@ -333,7 +333,7 @@
                     border-radius: 50%;
                 }	
                 &.active {
-                    background: lighten(#000, 70%);
+                    background: $primary-color;
                 }
             }
         }
