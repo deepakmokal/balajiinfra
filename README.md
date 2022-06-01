@@ -1,2 +1,2 @@
 # balajiinfra
-Personal Website for BalajiInfra.com
+Personal Website for BalajiInfras.com
